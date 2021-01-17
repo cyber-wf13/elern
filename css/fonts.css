@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Inter-Bold';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Inter-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Inter-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Poppins-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Poppins-Medium.woff") format("woff");
+}
+/*# sourceMappingURL=fonts.css.map */
