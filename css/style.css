@@ -693,6 +693,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter-SemiBold', 'Arial', sans-serif;
   font-weight: 600;
   line-height: 18px;
+  max-width: 235px;
 }
 
 .subject__title {
