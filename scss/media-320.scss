@@ -1,7 +1,9 @@
+@media (max-width: 648px){
 .wrapper{
   &--menu{
     width: 200px;
     left: -200px;
+    z-index: 99;
   }
 }
 
@@ -42,8 +44,32 @@
   }
 }
 
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 14px;
+  padding-top: 35px;
+  // min-width: 250px;
+  // max-width: 250px;
+  &__headers{
+    align-self: flex-start;
+  }
+  &__title{
+    font-size: 12px;
+    line-height: 15px;
+  }
+  &__subtitle{
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .slider{
-  width: 200px;
+  width: 250px;
   height: 150px;
   &__wrapper{
     height: 150px;
@@ -69,5 +95,14 @@
     width: 150px;
     font-size: 10px;
     line-height: 10px;
+    margin: 0;
   }
+  &__btn {
+    height: 20px;
+  }
+}
+}
+.slick-dots{
+  left: 20px;
+  // bottom: 34px;
 }

@@ -1,5 +1,6 @@
 let menuBtn = $('.menu-box__btn');
 let menu = $('.wrapper--menu');
+let content = $('.content');
 
 $('.slider').slick({
   arrows: false,
