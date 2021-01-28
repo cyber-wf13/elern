@@ -5,6 +5,10 @@
     left: -200px;
     z-index: 99;
   }
+  &--card{
+    flex-wrap: wrap;
+    width: 320px; 
+  }
 }
 
 .menu-box{
@@ -101,8 +105,49 @@
     height: 20px;
   }
 }
-}
+
 .slick-dots{
   left: 20px;
   // bottom: 34px;
+}
+
+.card{
+  width: 145px;
+  height: 100px;
+  margin-right: 0;
+  &:nth-child(2n+1){
+    margin-right: 10px;
+  }
+  &__content{
+    width: 100px;
+    // height: 80px;
+  }
+  &__info{
+    width: 80px;
+    height: 50px;
+  }
+  &__items{
+    width: 100px;
+  }
+  &__box-img{
+    position: relative;
+    width: 70px;
+  }
+  &__box-btn{
+    height: 16px;
+    width: 30px;
+
+  }
+}
+.box-img{
+  &__item:nth-child(4){
+    display: none;
+  }
+  &__item:nth-child(5){
+    display: none;
+  }
+  &__item:nth-child(6){
+    display: none;
+  }
+}
 }
