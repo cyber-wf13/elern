@@ -1,6 +1,12 @@
 @media (max-width: 648px){
+.container{
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 .wrapper{
   &--menu{
+    position: absolute;
     width: 200px;
     left: -200px;
     z-index: 99;
@@ -53,6 +59,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  min-width: 320px;
   width: 100%;
   padding-left: 24px;
   padding-right: 14px;
@@ -73,42 +80,44 @@
 }
 
 .slider{
-  width: 250px;
-  height: 150px;
+  width: 280px;
+  height: 190px;
   &__wrapper{
-    height: 150px;
+    height: 190px;
+    width: 280px;
   }
   &__item{
-    height: 150px;
-    width: 200px;
+    height: 190px;
+    width: 280px;
   }
   &__img{
-    height: 50px;
-    width: 80px;
+    height: 80px;
+    width: 120px;
   }
   &__textbox{
-    height: 100px;
+    // height: 100px;
     width: 150px;
   }
   &__title{
     font-size: 14px;
-    line-height: 15px;
+    line-height: 16px;
   }
   &__text{
     height: 70px;
     width: 150px;
     font-size: 10px;
-    line-height: 10px;
+    line-height: 12px;
     margin: 0;
   }
   &__btn {
     height: 20px;
+    width: 100px;
   }
 }
 
 .slick-dots{
-  left: 20px;
-  // bottom: 34px;
+  left: 70px;
+  bottom: 10px;
 }
 
 .card{
@@ -123,7 +132,7 @@
     // height: 80px;
   }
   &__info{
-    width: 80px;
+    width: 100px;
     height: 50px;
   }
   &__items{
@@ -150,4 +159,9 @@
     display: none;
   }
 }
+.progress{
+  min-width: 320px;
+  width: 100%;
+}
+
 }
