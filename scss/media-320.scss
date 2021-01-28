@@ -1,3 +1,9 @@
+.wrapper{
+  &--menu{
+    width: 200px;
+  }
+}
+
 .menu-box{
   position: relative;
   &__btn {
@@ -7,6 +13,30 @@
     position: absolute;
     right: -40px;
     top: 0;
-    // border: none;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
+
+.user{
+  &__image{
+    height: 30px;
+    width: 30px;
+    // justify-content: space-around;
+  }
+  &__text{
+    width: 100px;
+  }
+  &__name{
+    font-size: 14px;
+    line-height: 15px;
+  }
+  &__status{
+    font-size: 11px;
+    line-height: 15px;
   }
 }

@@ -41,16 +41,16 @@ h1,h2,h3,h4,h5,h6{
     width: 250px;
     border-right: 1px solid #E4E4E4;
   }
+  // &--user{
+  //   position: relative;
+  //   width: 200px;
+  //   min-height: 120px;
+  //   height: 100%;
+  // }
   &--card{
     display: flex;
     justify-content: flex-start;
     min-width: 620px;
-  }
-  &--user{
-    position: relative;
-    width: 100%;
-    min-height: 120px;
-    height: 100%;
   }
 }
 

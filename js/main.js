@@ -14,13 +14,22 @@ if (window.innerWidth >= 1024){
 }
 
 menuBtn.on('click', function(){
-  if (menu.css('left') == '-250px'){
+  if (menu.css('left') == '-200px'){
     menu.animate({
       'left': '0px'
-    }, 1500)
+    }, 1200)
+    menuBtn.css({
+      'transition-duration': '1500ms',
+      'transform': 'rotate(0deg)'
+    })
   }else {
     menu.animate({
-      'left': '-250px'
-    }, 1500)
+      'left': '-200px'
+    }, 1200)
+    menuBtn.css({
+      'transition-duration': '1500ms',
+      'transform': 'rotate(180deg)'
+    })
   }
+
 })
