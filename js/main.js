@@ -1,13 +1,26 @@
-// console.log(window.screen.height);
-// console.log(window.screen.width);
-$(document).ready(function(){
-  $('.slider').slick({
-    arrows: false,
-    dots: true,
-    // nextArrow: '<button type="button" class="slick-next"></button>',
-    // prevArrow: '<button type="button" class="slick-prev"></button>',
-    slidesToShow:1,
-    slidesToScroll:1,
-    // infinite: true,
-  });
+let menuBtn = $('.menu-box__btn');
+let menu = $('.wrapper--menu');
+
+$('.slider').slick({
+  arrows: false,
+  dots: true,
+  slidesToShow:1,
+  slidesToScroll:1,
 });
+
+
+if (window.innerWidth >= 1024){
+  menuBtn.hide();
+}
+
+menuBtn.on('click', function(){
+  if (menu.css('left') == '-250px'){
+    menu.animate({
+      'left': '0px'
+    }, 1500)
+  }else {
+    menu.animate({
+      'left': '-250px'
+    }, 1500)
+  }
+})
