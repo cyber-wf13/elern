@@ -1,0 +1,8 @@
+Inter SemiBold
+Inter Regular
+Inter Bold
+
+Poppins SemiBold
+Poppins Medium
+
+Open Sans Regular
