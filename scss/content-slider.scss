@@ -1,7 +1,7 @@
 .content{
   display: inline-block;
-  flex-grow: 1;
-  min-width: 680px;
+  min-width: 940px;
+  width: 100%;
   padding-left: 34px;
   padding-right: 24px;
   padding-top: 45px;
@@ -21,6 +21,7 @@
 }
 
 .slider{
+  display: inline-block;
   position: relative;
   height: 400px;
   width: 625px;

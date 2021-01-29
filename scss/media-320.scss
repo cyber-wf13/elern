@@ -1,0 +1,167 @@
+@media (max-width: 648px){
+.container{
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper{
+  &--menu{
+    position: absolute;
+    width: 200px;
+    left: -200px;
+    z-index: 99;
+  }
+  &--card{
+    flex-wrap: wrap;
+    width: 320px; 
+  }
+}
+
+.menu-box{
+  position: relative;
+  &__btn {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: -40px;
+    top: 0;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
+
+.user{
+  &__image{
+    height: 30px;
+    width: 30px;
+    // justify-content: space-around;
+  }
+  &__text{
+    width: 100px;
+  }
+  &__name{
+    font-size: 14px;
+    line-height: 15px;
+  }
+  &__status{
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 320px;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 14px;
+  padding-top: 35px;
+  // min-width: 250px;
+  // max-width: 250px;
+  &__headers{
+    align-self: flex-start;
+  }
+  &__title{
+    font-size: 12px;
+    line-height: 15px;
+  }
+  &__subtitle{
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.slider{
+  width: 280px;
+  height: 190px;
+  &__wrapper{
+    height: 190px;
+    width: 280px;
+  }
+  &__item{
+    height: 190px;
+    width: 280px;
+  }
+  &__img{
+    height: 80px;
+    width: 120px;
+  }
+  &__textbox{
+    // height: 100px;
+    width: 150px;
+  }
+  &__title{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__text{
+    height: 70px;
+    width: 150px;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 0;
+  }
+  &__btn {
+    height: 20px;
+    width: 100px;
+  }
+}
+
+.slick-dots{
+  left: 70px;
+  bottom: 10px;
+}
+
+.card{
+  width: 145px;
+  height: 100px;
+  margin-right: 0;
+  &:nth-child(2n+1){
+    margin-right: 10px;
+  }
+  &__content{
+    width: 100px;
+    // height: 80px;
+  }
+  &__info{
+    width: 100px;
+    height: 50px;
+  }
+  &__items{
+    width: 100px;
+  }
+  &__box-img{
+    position: relative;
+    width: 70px;
+  }
+  &__box-btn{
+    height: 16px;
+    width: 30px;
+
+  }
+}
+.box-img{
+  &__item:nth-child(4){
+    display: none;
+  }
+  &__item:nth-child(5){
+    display: none;
+  }
+  &__item:nth-child(6){
+    display: none;
+  }
+}
+.progress{
+  min-width: 320px;
+  width: 100%;
+}
+
+}
