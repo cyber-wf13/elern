@@ -1,6 +1,8 @@
 let menuBtn = $('.menu-box__btn');
 let menu = $('.wrapper--menu');
 let content = $('.content');
+let container = $('.container');
+
 
 $('.slider').slick({
   arrows: false,
@@ -12,6 +14,8 @@ $('.slider').slick({
 
 if (window.innerWidth >= 1024){
   menuBtn.hide();
+}else{
+  menu.css('height', container.css('height'));
 }
 
 menuBtn.on('click', function(){
@@ -21,7 +25,7 @@ menuBtn.on('click', function(){
     }, 1200)
     menuBtn.css({
       'transition-duration': '1500ms',
-      'transform': 'rotate(0deg)'
+      'transform': 'rotate(180deg)'
     })
   }else {
     menu.animate({
@@ -29,7 +33,7 @@ menuBtn.on('click', function(){
     }, 1200)
     menuBtn.css({
       'transition-duration': '1500ms',
-      'transform': 'rotate(180deg)'
+      'transform': 'rotate(0deg)'
     })
   }
 
