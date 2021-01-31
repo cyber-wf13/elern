@@ -5,11 +5,16 @@
   // justify-content: flex-start;
   // align-items: flex-start;
   width: 506px;
+  // max-width: 506px;
+  // min-width: 280px;
+  // width: 100%;
   background-color: #F5FBFF;
   padding: 70px 38px 0px 24px;
   position: relative;
 
   &__title{
+    display: block;
+    width: 100%;
     font-family: 'Inter-SemiBold', 'Arial', sans-serif;
     font-weight: 600;
     font-size: 16px;

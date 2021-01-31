@@ -1,4 +1,4 @@
-@media (min-width:320px) and (max-width: 1024px) {
+@media (min-width:320px) and (max-width: 768px) {
   .container {
     flex-direction: column;
     justify-content: space-between;
@@ -96,11 +96,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-width: 320px;
-    width: 100%;
+    // min-width: 320px;
+    // width: 100%;
     padding-left: 24px;
     padding-right: 14px;
     padding-top: 40px;
+    // padding: 0;
     // min-width: 250px;
     // max-width: 250px;
     &__headers {
@@ -165,10 +166,10 @@
   .card {
     width: 145px;
     height: 100px;
-    margin-right: 0;
-    &:nth-child(2n + 1) {
-      margin-right: 10px;
-    }
+    margin-right: 10px;
+    // &:nth-child(2n + 1) {
+    //   margin-right: 10px;
+    // }
     &__content {
       width: 100px;
       // height: 80px;
