@@ -43,6 +43,16 @@ h1,h2,h3,h4,h5,h6{
     // height: 520px;
     border-right: 1px solid #E4E4E4;
   }
+  &--search{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    margin-right: 365px;
+    // right: 400px;
+    z-index: 99;
+    // width: 54px;
+    // height: 24px;
+  }
   // &--user{
   //   position: relative;
   //   width: 200px;
@@ -58,7 +68,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
-
+@import 'search';
 @import 'menu';
 @import 'user';
 @import 'content-slider';

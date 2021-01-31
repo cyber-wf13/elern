@@ -2,6 +2,8 @@ let menuBtn = $('.menu-box__btn');
 let menu = $('.wrapper--menu');
 let content = $('.content');
 let container = $('.container');
+let menuItem = $('.menu__item');
+let menuLink = $('.menu__link');
 
 
 $('.slider').slick({
@@ -11,6 +13,20 @@ $('.slider').slick({
   slidesToScroll:1,
 });
 
+menuItem.each(function(index, element){
+  menuItem.eq(index).on('mouseover', function(){
+    menuItem.eq(index).css('backgroundColor','#2F3CED');
+    menuItem.eq(index).css({
+      'backgroundColor': '#2F3CED',
+      'borderRadius':'0px 12px 12px 0px',
+    });
+    menuLink.eq(index).css('color','#fff');
+}) 
+  menuItem.eq(index).on('mouseout', function(){
+    menuItem.eq(index).attr('style',' ');
+    menuLink.eq(index).attr('style',' ');
+}) 
+})
 
 if (window.innerWidth >= 1024){
   menuBtn.hide();

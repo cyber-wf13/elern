@@ -14,9 +14,34 @@
     z-index: 99;
     background-color: #fffdfd;
   }
+  &--search{
+    top: 10px;
+    margin-right: 10px;
+  }
   &--card{
     flex-wrap: wrap;
     width: 320px; 
+  }
+}
+
+.search{
+  &__input{
+    height: 15px;
+  }
+  &__input::placeholder{
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+
+.push{
+  &__box-btn{
+    top: 35px;
+    right: 25px;
+  }
+  &__btn{
+    height: 28px;
+    width: 28px;
   }
 }
 

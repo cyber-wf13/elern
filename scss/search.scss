@@ -1,0 +1,60 @@
+.search{
+  position: relative;
+  &::before{
+    content: url('../images/progress-search.svg');
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    height: 20px;
+    width: 20px;
+  }
+  &__input{
+    height: 24px;
+    width: 55px;
+    // margin: 64px 0px 100px 39px;
+    border: none;
+    background-color: transparent;
+  }
+  &__input::placeholder{
+    font-family: 'Inter-SemiBold', 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #808191;
+  }
+}
+
+.push{
+  &__box-btn{
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    display: inline-block;
+    z-index: 99;
+  }
+  &__btn{
+    height: 48px;
+    width: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url('../images/progress-bell.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 12px 35px -13px #000;
+  }
+  &__count{
+    border-radius: 50%;
+    background-color: #FF754C;
+    position: absolute;
+    top: 0px;
+    right: -13px;
+    height: 24px;
+    width: 24px;
+    padding: 4px 8px;
+    font-family: 'Inter-SemiBold', 'Arial', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+  }
+}
