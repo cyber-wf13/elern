@@ -4,7 +4,32 @@ let content = $('.content');
 let container = $('.container');
 let menuItem = $('.menu__item');
 let menuLink = $('.menu__link');
+let user = $('.user');
 
+// $.fn.fixedItem = function(pos){
+//   let $this = this;
+//   let $window = $(window);
+//   let oldScroll = $window.scrollTop();
+//   $window.on('scroll', function(){
+//     let newScroll = $window.scrollTop();
+//     if ($window.scrollTop() > 150){
+//       // pos = pos - (newScroll - oldScroll);
+//       // oldScroll = newScroll;
+//       pos = $window.scrollTop();
+//       user.css({
+//         'marginTop': pos + 'px',
+//       })
+//     }else{
+//       pos = 150;
+//       user.css({
+//         'marginTop': pos + 'px'
+//       })
+
+//     }
+//   })
+// }
+
+// user.fixedItem(150);
 
 $('.slider').slick({
   arrows: false,
