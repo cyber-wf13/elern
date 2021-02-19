@@ -4,6 +4,8 @@ html,body{
   margin: 0;
   padding: 0;
   min-width: 320px;
+  min-height: 100%;
+  height: 100%;
 }
 *,*::after,*::before{
   box-sizing: inherit;
@@ -28,46 +30,35 @@ h1,h2,h3,h4,h5,h6{
   padding: 0;
 }
 
-.container{
-  // width: max-content;
-  width: 100%;
-  // height: 100%;
-  display: flex;
-  justify-content: space-between;
-  // height: max-content;
-}
+// .container{
+//   // width: max-content;
+//   width: 100%;
+//   // height: 100%;
+//   display: flex;
+//   justify-content: space-between;
+//   // height: max-content;
+// }
 .wrapper{
-  position: relative;
   &--menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    // position: absolute;
-    width: 250px;
-    // height: 520px;
+    display: inline-block;
+    position: relative;
+    width: 255px;
+    height: 100%;
+    // height: 100vh;
     border-right: 1px solid #E4E4E4;
   }
   &--search{
     position: absolute;
-    top: 20px;
-    right: 0px;
-    // margin-right: 365px;
-    // right: 400px;
-    z-index: 99;
-    // width: 54px;
-    // height: 24px;
+    top: 30px;
+    right: 300px;
+    z-index: 5;
   }
-  // &--user{
-  //   position: relative;
-  //   width: 200px;
-  //   min-height: 120px;
-  //   height: 100%;
-  // }
   &--card{
     display: flex;
     justify-content: flex-start;
     // min-width: 620px;
-    width: 620px
+    width: 620px;
+    height: 180px;
   }
 }
 
@@ -101,10 +92,10 @@ h1,h2,h3,h4,h5,h6{
 .push{
   &__box-btn{
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 45px;
     display: inline-block;
-    z-index: 99;
+    z-index: 5;
   }
   &__btn{
     height: 48px;
@@ -132,19 +123,23 @@ h1,h2,h3,h4,h5,h6{
     color: #fff;
   }
 }
-.nav{
-  width: 100%;
+
+.menu-box{
+  // height: 100%;
+  background-color: #fffdfd;
+  &__logo{
+    height: 25px;
+    width: 105px;
+    margin: 40px 43px;
+  }
 }
+
 .menu{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   width: 100%;
+  height: 310px;
   &__item{
-    // width: 175px;
     width: 100%;
-    height: 55px;
+    height: 40px;
     color: #fff;
     display: flex;
     justify-content: flex-start;
@@ -155,7 +150,7 @@ h1,h2,h3,h4,h5,h6{
       border-radius: 0px 12px 12px 0px;
       width: 90%;
     }
-    &:hover a{
+    &:hover .menu__link{
       color: #fff;
     }
   }
@@ -167,62 +162,38 @@ h1,h2,h3,h4,h5,h6{
     font-size: 14px;
     line-height: 20px;
   }
-  &__link:hover{
-    color: #fff;
+  &__icon{
+    height: 23px;
+    width: 16px;
   }
-  // &__item:hover{
-  //   // color: #fff;
-  //   // background-color: #2F3CED;
-  //   // border-radius: 0px 12px 12px 0px;
-  // }
+
 }
-.menu-box{
-  position: relative; 
-  // max-width: 260px;
-  // min-height: 700px;
-  // #FDFDFD;
-  background-color: #fffdfd;
-  // height = 915px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  &__logo{
-    height: 25px;
-    width: 105px;
-    margin: 50px 43px 60px;
-  }
-}
+
 .user{
-  // position: fixed;
-  // top: 550px;
-  // position: absolute;
-  // left: 0;
-  // top: 550px;
-  // bottom: 0px;
-  margin-top: 100px;
-  // display: inline-block;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% - 20px);
-  // width: 100%;
+  width: 100%;
   height: 40px;
   font-family: 'Inter-SemiBold', 'Arial', sans-serif;
-  margin-left: 20px;
-  z-index: 99;
+  padding-left: 20px;
+  z-index: 4;
   &__text{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    padding-left: 5px;
   }
   &__name{
+    display: inline-block;
+    width: 100%;
     font-size: 14px;
     line-height: 20px;
     color: #11142D;
   }
   &__status{
+    display: inline-block;
+    width: 100%;
     font-size: 13px;
     line-height: 18px;
     color: #808191;
@@ -239,8 +210,11 @@ h1,h2,h3,h4,h5,h6{
 }
 .content{
   display: inline-block;
-  max-width: 840px;
-  width: 100%;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  // left: 400px;
   // min-width: 320px;
   // width: 100%;
   padding-left: 34px;
@@ -257,14 +231,14 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Poppins-SemiBold', 'Arial', sans-serif;
     font-size: 40px;
     line-height: 48px;
-    margin: 10px 0px 30px;
+    margin: 10px 0px 20px;
   }
 }
 
 .slider{
   display: inline-block;
   position: relative;
-  height: 400px;
+  height: 350px;
   max-width: 625px;
   width: 100%;
   // width: 625px;
@@ -277,7 +251,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 400px;
+    height: 350px;
     width: 100%;
   }
   &__img{
@@ -322,8 +296,8 @@ h1,h2,h3,h4,h5,h6{
   display: flex;
   justify-content: center;
   position: absolute;
-  left: 380px;
-  bottom: 34px;
+  left: 400px;
+  bottom: 14px;
   .slick-active{
     button{
       border: 2px solid #A0D7E7;
@@ -343,27 +317,24 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 .learn{
-  margin-top: 40px;
+  padding-top: 10px;
+  height: 230px;
   &__title{
     font-family: 'Inter-Bold', 'Arial', sans-serif;
     font-size: 22px;
     font-weight: 700;
     line-height: 30px;
     height: 35px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
   }
 }
 .card{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   width: 190px;
-  min-height: 190px;
-  margin-bottom: 30px;
+  max-height: 170px;
+  margin: 0px 20px 10px 0px;
+  padding: 10px;
   background-color: #FFF;
   border-radius: 24px;
-  margin-right: 20px;
   &__content{
     margin: 0 auto;
   }
@@ -465,17 +436,13 @@ h1,h2,h3,h4,h5,h6{
 }
 .progress{
   display: inline-block;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-start;
-  // align-items: flex-start;
-  width: 506px;
-  // max-width: 506px;
-  // min-width: 280px;
-  // width: 100%;
+  position: absolute;
+  right: 1px;
+  top: 0;
+  min-width: 440px;
+  height: 100%;
   background-color: #F5FBFF;
   padding: 70px 38px 0px 24px;
-  position: relative;
 
   &__title{
     display: block;
@@ -492,6 +459,10 @@ h1,h2,h3,h4,h5,h6{
     justify-content: space-around;
     align-items: flex-start;
     height: 385px;
+  }
+  &__graph{
+    width: 100%;
+    height: 245px;
   }
 }
 
@@ -570,5 +541,5 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
-@import 'media-320';
+// @import 'media-320';
 

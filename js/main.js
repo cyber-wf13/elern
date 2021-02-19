@@ -79,3 +79,4 @@ menuBtn.on('click', function(){
   }
 
 })
+console.log(window.outerHeight);
