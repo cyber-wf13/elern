@@ -48,8 +48,8 @@ h1,h2,h3,h4,h5,h6{
   &--card{
     display: flex;
     justify-content: flex-start;
-    width: 620px;
-    height: 180px;
+    width: 98.72%;
+    height: 190px;
   }
 }
 
@@ -131,7 +131,7 @@ h1,h2,h3,h4,h5,h6{
   &__logo{
     height: 2.73%;
     width: 41.17%;
-    margin: 8.74% 15.6%;
+    margin: 31.62% 41.5% 16% 16.6%;
   }
 }
 
@@ -221,14 +221,14 @@ h1,h2,h3,h4,h5,h6{
   height: 100%;
   position: absolute;
   top: 0;
-  // left: 400px;
-  // min-width: 320px;
-  // width: 100%;
-  padding-left: 34px;
-  padding-right: 24px;
-  padding-top: 45px;
+  padding-left: 2.43%;
+  padding-right: 1.04%;
+  padding-top: 3.47%;
   background-color: #f7f4f4;
-
+  &__headers{
+    height: 15.08%;
+    margin-bottom: 5%;
+  }
   &__title{
     font-family: 'Poppins-Medium', 'Arial', sans-serif;
     font-size: 24px;
@@ -245,12 +245,15 @@ h1,h2,h3,h4,h5,h6{
 .slider{
   display: inline-block;
   position: relative;
-  height: 350px;
-  max-width: 625px;
+  height: 38.25%;
+  // max-width: 625px;
   width: 100%;
   // width: 625px;
   border-radius: 24px;
   background-color: #2F3CED;
+  div:not(.slider__img):not(.slider__textbox){
+    height: 100%;
+  }
   &__wrapper{
     outline: none;
   }
@@ -258,7 +261,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 350px;
+    height: 100%;
     width: 100%;
   }
   &__img{
@@ -266,12 +269,13 @@ h1,h2,h3,h4,h5,h6{
     background-image: url('../images/slider-img.png');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 260px;
-    height: 300px;
+    width: 41.4%;
+    height: 90.9%;
   }
   &__textbox{
     display: inline-block;
-    width: 200px;
+    width: 31.84%;
+    height: 100%;
     color: #fff;
   }
   &__title{
@@ -283,11 +287,11 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Inter-Regular', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    margin: 8px 0px 16px;
+    padding: 8px 0px 16px;
   }
   &__btn{
-    height: 55px;
-    width: 160px;
+    height: 18.33%;
+    width: 80%;
     background-color: #fff;
     color: #11142D;
     border: none;
@@ -303,8 +307,8 @@ h1,h2,h3,h4,h5,h6{
   display: flex;
   justify-content: center;
   position: absolute;
-  left: 400px;
-  bottom: 14px;
+  left: 20.8%;
+  top: 92%;
   .slick-active{
     button{
       border: 2px solid #A0D7E7;
@@ -324,8 +328,8 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 .learn{
-  padding-top: 10px;
-  height: 230px;
+  padding-top: 4.37%;
+  height: 25.13%;
   &__title{
     font-family: 'Inter-Bold', 'Arial', sans-serif;
     font-size: 22px;
@@ -336,8 +340,8 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 .card{
-  width: 190px;
-  max-height: 170px;
+  width: 30.64%;
+  height: 90%;
   margin: 0px 20px 10px 0px;
   padding: 10px;
   background-color: #FFF;
